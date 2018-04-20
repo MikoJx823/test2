@@ -424,16 +424,16 @@
 		<div class="container">
 			<div class="row">
 				
-				<div class="col-sm-6 collection"> 
-				
+				<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-sm-6 " > 
+					<div class="clearfix">
 					
-					<div id="jssor_1" style="position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
+					<div id="jssor_1" style="background-color:black;position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
 				     
 				        <!-- Loading Screen -->
 				        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 				            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 				        </div>
-				        <div data-u="slides" style="cursor:default;padding:10px;top:0px;left:0px;width:730px;height:500px;overflow:hidden;">
+				        <div data-u="slides" style="cursor:default;padding:10px;top:0px;left:0px;width:750px;height:500px;overflow:hidden;">
 				            <div>
 				                <img data-u="image" src="images/01.jpg" />
 				            </div>
@@ -452,7 +452,7 @@
 				        </div>
 				    </div>
 				    <script type="text/javascript">jssor_1_slider_init();</script>
-					
+					</div>
 					
 					<!--  <a href="#!">
 						<img src="../images/Dry-winter-snow-natural-hd-wallpaper.jpg" class="img-responsive" alt="">
@@ -460,13 +460,14 @@
 				</div><!-- /.collection -->
 				<div class="col-sm-6">
 					<div class="row">
-						<div class="col-sm-6 collection">
-							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 " >
+							<div class="clearfix">
+							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:350px;height:230px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;padding:10px;top:0px;left:0px;width:680px;height:440px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;top:0px;left:0px;width:350px;height:220px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/02.jpg" />
 					            </div>
@@ -485,17 +486,19 @@
 					        </div>
 				    	</div>
 				    	<script type="text/javascript">jssor_2_slider_init();</script>
+				    	</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/02.jpg" class="img-responsive" alt="">
 							</a>-->
 						</div><!-- /.collection -->
-						<div class="col-sm-6 collection">
-							<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:450px;overflow:hidden;visibility:hidden;">
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6">
+							<div class="clearfix">
+							<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:680px;height:440px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:700px;height:440px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
 					            </div>
@@ -514,14 +517,14 @@
 					        </div>
 				    	</div>
 				    	<script type="text/javascript">jssor_3_slider_init();</script>
-							
+							</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/03.jpg" class="img-responsive" alt="">
 							</a> -->
 						</div><!-- /.collection -->
-						<div class="col-sm-12 collection">
-							
-							<div id="jssor_4" style="position:relative;margin:0 auto;top:0px;left:0px;width:750px;height:240px;overflow:hidden;visibility:hidden;">
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-12 ">
+							<div class="clearfix">
+							<div id="jssor_4" style="position:relative;padding-top:10px;margin:0 auto;top:0px;left:0px;width:700px;height:240px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
