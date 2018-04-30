@@ -34,6 +34,9 @@
 	<link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Inconsolata:300,400,500,700|Unica+One:300,400,500,700">
 	<!-- All theme style -->
 	<link rel="stylesheet" type="text/css" media="all" href="css/min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+   	<link rel="stylesheet" type="text/css" href="css/slick.css">
+  	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,8 +45,10 @@
 	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-
 	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/min.js"></script>
+  	<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jssor.slider.min.js" type="text/javascript"></script>
    
     <script type="text/javascript">
@@ -51,7 +56,7 @@
 
             var jssor_1_options = {
               $AutoPlay: 1,
-              $Idle: 2000,
+              $Idle: 5000,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
@@ -93,7 +98,7 @@
 
             var jssor_2_options = {
               $AutoPlay: 1,
-              $Idle: 2000,
+              $Idle: 5000,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
@@ -135,7 +140,7 @@
 
             var jssor_3_options = {
               $AutoPlay: 1,
-              $Idle: 2000,
+              $Idle: 5000,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
@@ -177,7 +182,7 @@
 
             var jssor_4_options = {
               $AutoPlay: 1,
-              $Idle: 2000,
+              $Idle: 5000,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },
@@ -214,6 +219,36 @@
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             /*#endregion responsive code end*/
         };
+        
+        $(document).on('ready', function() {
+            $('.slider-resp-insta').slick({
+          	  infinite: true,
+          	  speed: 300,
+          	  slidesToShow: 5,
+          	  slidesToScroll: 1,
+          	  responsive: [
+          	    {
+          	      breakpoint: 768,
+          	      settings: {
+          	        slidesToShow: 3,
+          	        slidesToScroll: 1,
+          	        infinite: true
+          	      }
+          	    },
+          	    {
+          	      breakpoint: 600,
+          	      settings: {
+          	        slidesToShow: 2,
+          	        slidesToScroll: 1,
+          	        infinite: true
+          	      }
+          	    }
+          	    // You can unslick at a given breakpoint now by adding:
+          	    // settings: "unslick"
+          	    // instead of a settings object
+          	  ]
+          	});
+          });
     </script>
     <style>
         /* jssor slider loading skin spin css */
@@ -246,6 +281,25 @@
         .jssora053:hover {opacity:.8;}
         .jssora053.jssora053dn {opacity:.5;}
         .jssora053.jssora053ds {opacity:.3;pointer-events:none;}
+        
+        .slider-insta {
+	    	margin: 0;
+	      	padding: 0;
+	      	box-sizing: border-box;
+	        width: 100%;
+	        /*margin: 100px auto;*/
+	    }
+	
+	    .slick-slide {
+	      margin: 0px 10px;
+	    }
+	
+	    .slick-slide img {
+	      width: 100%;
+	      height:auto;
+	    }
+	
+
     </style>
 
 </head>
@@ -288,8 +342,8 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			        <a class="navbar-brand" href="index.html">
-			          	<img src="images/logo2.png" alt="Navalli" witdh="100px">
+			        <a class="navbar-brand" href="index.html" style="width:150px">
+			          	<img src="images/logo2.png" alt="Navalli" >
 			        </a>
 	        	</div>
 	        	<div id="navbar" class="navbar-collapse collapse">
@@ -423,8 +477,12 @@
 	<section class="section collections" id="home-collections">
 		<div class="container">
 			<div class="row">
-				
-				<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-sm-6 " > 
+				<div class="col-md-2 col-sm-2"></div>
+				<div class="col-md-8 col-sm-8">
+					<div class="row"> 
+					
+					
+					<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-md-6 col-sm-6" > 
 					<div class="clearfix">
 					
 					<div id="jssor_1" style="background-color:black;position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
@@ -458,16 +516,18 @@
 						<img src="../images/Dry-winter-snow-natural-hd-wallpaper.jpg" class="img-responsive" alt="">
 					</a> -->
 				</div><!-- /.collection -->
-				<div class="col-sm-6">
+					
+					<div class="col-sm-6 col-md-6 ">
+					
 					<div class="row">
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 " >
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6" >
 							<div class="clearfix">
-							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:350px;height:230px;overflow:hidden;visibility:hidden;">
+							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;top:0px;left:0px;width:350px;height:220px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:700px;height:440px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/02.jpg" />
 					            </div>
@@ -548,22 +608,23 @@
 					        </div>
 				    	</div>
 				    	<script type="text/javascript">jssor_4_slider_init();</script>
-							
+							</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/04.jpg" class="img-responsive" alt="">
 							</a> -->
 						</div><!-- /.collection -->
 					</div>
 				</div>
+				
+				</div>
+				
+				</div>
+				<div class="col-md-2 col-sm-2"></div>
+				
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /.collections -->
-
 	
-	
-	
-	
-
 	<section class="section small-padding-top" style="background-color:#f8f8f8; padding:70px">
 		<div class="container">
 			<div class="row">
@@ -573,54 +634,77 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="pos-r clearfix">
-					<ul style="text-align:center;">
-					    <li style="display:inline-block;*display:inline;padding:5px;">
-    					<!--   style="float:left;width:20%;padding:30px" -->
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-					    </a>
-					    </li>
-					    <li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-					    </a>
-					    </li>
- 						<li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-					    </a>
-					    </li>
-					    <li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-					    </a>
-					    </li>
-					    <li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-					    </a>
-					    </li>
-					</ul>
+				<div class="col-md-2"></div>
+				<div class="col-md-8" >
+					<div class="section slider-resp-insta slider-insta">
+						<div>
+							<a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							</a>
+					    </div>
+					    <div>
+					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							</a>
+					    </div>
+					    <div>
+					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							</a>
+					    </div>
+					    <div>
+					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							</a>
+					    </div>
+					    <div>
+					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							</a>
+					    </div>
+					</div>
 					
+				
+						<!--<div class="pos-r clearfix">
+							<ul> <!-- text-align:center; -->
+							   <!--  <li style="text-align:center;display:inline-block;*display:inline;width:19%">
+		    					<!--   style="float:left;width:20%;padding:30px" -->
+							    <!-- <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								    <img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							    </a>
+							    </li>
+							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
+							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							    </a>
+							    </li>
+		 						<li style="text-align:center;display:inline-block;*display:inline;width:19%">
+							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							    </a>
+							    </li>
+							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
+							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							    </a>
+							    </li>
+							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
+							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
+								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+							    </a>
+							    </li>
+							</ul>
+						</div>-->
+					</div>
+					<div class="col-md-2">
 					
-					
-					    
-					    
-					   
-					    
-					    
-					    
-					   
-					
-					
-				</div>
+					</div>
+				
+				
 			</div>
 		</div>
 	</section><!-- /.instagram -->
 
-
-	
 	<section class="section promotions small-padding-top" id="promotions">
 		
 		<div class="container">
@@ -630,27 +714,48 @@
 					<p>Checkout the Latest and Hottest!</p>
 				</div>
 				<div class="row">
-				<div class="pos-r clearfix">
-					<ul style="text-align:center;">
-					    <li style="display:inline-block;*display:inline;padding:5px;">
-    					<!--   style="float:left;width:20%;padding:30px" -->
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
-					    </a>
-					    </li>
-					    <li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/brands/11street.png" height="120px"/>
-					    </a>
-					    </li>
- 						<li style="display:inline-block;*display:inline;padding:5px">
-					    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-						    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
-					    </a>
-					    </li>
-					</ul>
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="row">
+						<div class="col-md-4" style="text-align:center;">
+						 <a href="https://shopee.com.my/" target="_blank">
+								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
+							    </a>
+						</div>
+						<div class="col-md-4" style="text-align:center;">
+						<a href="http://www.11street.my/" target="_blank">
+								    <img data-u="image" src="images/brands/11street.png" height="120px"/>
+							    </a>
+						</div>
+						<div class="col-md-4" style="text-align:center;">
+						<a href="https://www.lazada.com.my/" target="_blank">
+								    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
+							    </a>
+						</div>
+						</div>
+						<!--  <div class="pos-r clearfix">
+							<ul style="text-align:center;">
+							    <li style="display:inline-block;*display:inline;padding:5px;">
+		    					<!--   style="float:left;width:20%;padding:30px" -->
+							    <!--  <a href="https://shopee.com.my/" target="_blank">
+								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
+							    </a>
+							    </li>
+							    <li style="display:inline-block;*display:inline;padding:5px">
+							    <a href="http://www.11street.my/" target="_blank">
+								    <img data-u="image" src="images/brands/11street.png" height="120px"/>
+							    </a>
+							    </li>
+		 						<li style="display:inline-block;*display:inline;padding:5px">
+							    <a href="https://www.lazada.com.my/" target="_blank">
+								    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
+							    </a>
+							    </li>
+							</ul>
+						</div>-->
+					</div>
+					<div class="col-md-2"></div>
 				</div>
-			</div>
 				
 			</div><!-- /.row -->
 		</div><!-- /.container -->
@@ -709,7 +814,7 @@
 	</a>
 
 	<!-- All Theme Scripts -->
-	<script type="text/javascript" src="js/min.js"></script>
+
 
 </body>
 </html>

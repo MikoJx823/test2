@@ -1,0 +1,5 @@
+onsaleicon{width:50px;height:50px;line-height:50px;top:0px;right:0px;background-color:#e74c3c;backface-visibility:hidden;background-clip:padding-box;font-size:14px;color:#fff;text-align:center;display:block;overflow:hidden;z-index:1;position:absolute}
+.onsaleicon.new{background-color:#fff;color:#323237}
+.onsaleicon.hot{background-color:#323237}
+
+@media only screen and (min-width:993px){.mega-dropdown{width:400px;}}
