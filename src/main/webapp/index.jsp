@@ -441,7 +441,7 @@
 	    </nav>
 	</div><!-- /.nav-container -->
 
-	<div class="swiper-slider" >
+	<div class="swiper-slider">
 		<!-- Slider main container -->
 		<div class="swiper-container fullscreen">
 		    <!-- Additional required wrapper -->
