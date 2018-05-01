@@ -625,17 +625,17 @@
 		</div><!-- /.container -->
 	</section><!-- /.collections -->
 	
-	<section class="section small-padding-top" style="background-color:#f8f8f8; padding:70px">
+	<section class="section small-padding-top" style="background-color:#f8f8f8; "> <!-- paddings:70px -->
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 text-center" >
+				<div class="col-sm-12 text-center">
 					<h3>Playing Favorites</h3>
 					<p>Share a selfie wearing your face Navalli Hill products with MAKEUPMY</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-2"></div>
-				<div class="col-md-8" >
+				<div class="col-md-8">
 					<div class="section slider-resp-insta slider-insta">
 						<div>
 							<a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
