@@ -305,7 +305,7 @@
 </head>
 <body>
 
-	<div class="nav-container navbar-fixed-top nav-sticky" >
+	<div class="nav-container navbar-fixed-top nav-sticky">
 		<!-- <nav class="sub-navbar">
 			 <div class="list-select">
 				<div class="inner-select">
@@ -441,7 +441,7 @@
 	    </nav>
 	</div><!-- /.nav-container -->
 
-	<div class="swiper-slider">
+	<div class="swiper-slider" >
 		<!-- Slider main container -->
 		<div class="swiper-container fullscreen">
 		    <!-- Additional required wrapper -->
