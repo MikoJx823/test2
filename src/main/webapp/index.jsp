@@ -347,6 +347,11 @@
 			        </a>
 	        	</div>
 	        	<div id="navbar" class="navbar-collapse collapse">
+	        		<!--  <ul style="float:left:right:-100px">
+	        			<li style="float:left;"><a href="#!" target="_blank"><img data-u="image" src="images/icon/fb.png" height="30px"/></a></li>
+						<li style="float:left;"><a href="#!" target="_blank"><img data-u="image" src="images/icon/ig.png" height="30px"/></a></li>
+	        		</ul> -->
+	        		
 			    	<li class="shopping-cart hidden">
 			            <a href="#!" class="li-icon" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
@@ -394,6 +399,7 @@
 			        <li><a href="#!" class="li-icon hidden" id="trigger-overlay"><i class="lil-search"></i></a></li>
 			    </ul>
 	        	<div id="navbar" class="navbar-collapse collapse">
+	        		
 				    <!--  <ul class="nav navbar-nav navbar-left">
 				        <li class="active">
 				            <a href="index.html" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Home <i class="caret"></i></a>
@@ -477,12 +483,12 @@
 	<section class="section collections" id="home-collections">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-sm-2"></div>
-				<div class="col-md-8 col-sm-8">
+				<div class="col-md-2 col-sm-2 col-lg-2"></div>
+				<div class="col-md-8 col-sm-8 col-lg-8">
 					<div class="row"> 
 					
 					
-					<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-md-6 col-sm-6" > 
+					<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-md-6 col-sm-6 col-lg-6" > 
 					<div class="clearfix">
 					
 					<div id="jssor_1" style="position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
@@ -517,10 +523,10 @@
 					</a> -->
 				</div><!-- /.collection -->
 					
-					<div class="col-sm-6 col-md-6 ">
+					<div class="col-sm-6 col-md-6 col-lg-6">
 					
 					<div class="row">
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6" >
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 col-md-6 col-lg-6" >
 							<div class="clearfix">
 							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
@@ -551,7 +557,7 @@
 								<img src="build/img/collections/02.jpg" class="img-responsive" alt="">
 							</a>-->
 						</div><!-- /.collection -->
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6">
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 col-md-6 col-lg-6">
 							<div class="clearfix">
 							<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
@@ -582,7 +588,7 @@
 								<img src="build/img/collections/03.jpg" class="img-responsive" alt="">
 							</a> -->
 						</div><!-- /.collection -->
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-12 ">
+						<div style="padding-left:5px;padding-right:5px;" class="col-sm-12 col-md-12 col-lg-12">
 							<div class="clearfix">
 							<div id="jssor_4" style="position:relative;padding-top:10px;margin:0 auto;top:0px;left:0px;width:700px;height:240px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
@@ -625,7 +631,7 @@
 		</div><!-- /.container -->
 	</section><!-- /.collections -->
 	
-	<section class="section small-padding-top" style="background-color:#f8f8f8; "> <!-- paddings:70px -->
+	<section class="section small-padding-top" style="background-color:#f8f8f8;"> <!-- paddings:70px -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
