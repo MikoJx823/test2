@@ -469,8 +469,8 @@
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
 		    <!-- If we need navigation buttons -->
-		    <div class="swiper-button-prev"><i class="lil-chevron_left"></i></div>
-		    <div class="swiper-button-next"><i class="lil-chevron_right"></i></div>
+		    <div class="swiper-button-prev"><!--  <i class="lil-chevron_left"></i> --></div>
+		    <div class="swiper-button-next"><!--<i class="lil-chevron_right"></i> --></div>
 		</div>
 	</div><!-- /.swiper-slider -->
 
@@ -485,7 +485,7 @@
 					<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-md-6 col-sm-6" > 
 					<div class="clearfix">
 					
-					<div id="jssor_1" style="background-color:black;position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
+					<div id="jssor_1" style="position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
 				     
 				        <!-- Loading Screen -->
 				        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
