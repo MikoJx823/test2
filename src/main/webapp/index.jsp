@@ -53,7 +53,8 @@
    
     <script type="text/javascript">
         jssor_1_slider_init = function() {
-
+			
+        	//LEFT SUB BANNER 
             var jssor_1_options = {
               $AutoPlay: 1,
               $Idle: 5000,
@@ -64,11 +65,47 @@
                 $Class: $JssorBulletNavigator$
               }
             };
-
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
+			
+            //RIGHT TOP FIRST SUB BANNER
+            var jssor_2_options = {
+            	$AutoPlay: 1,
+            	$Idle: 5000,
+            	$ArrowNavigatorOptions: {
+            		$Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+            
+            //RIGHT TOP SECOND SUB BANNER
+            var jssor_3_options = {
+            	$AutoPlay: 1,
+                $Idle: 5000,
+                $ArrowNavigatorOptions: {
+                	$Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+			var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
+            
+			var jssor_4_options = {
+		    	$AutoPlay: 1,
+		    	$Idle: 5000,
+		    	$ArrowNavigatorOptions: {
+		        	$Class: $JssorArrowNavigator$
+		    	},
+		   		$BulletNavigatorOptions: {
+		        	$Class: $JssorBulletNavigator$
+		   		}
+		    };
+		    var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_4_options);
+			
             /*#region responsive code begin*/
-
             var MAX_WIDTH = 980;
 
             function ScaleSlider() {
@@ -85,77 +122,20 @@
                     window.setTimeout(ScaleSlider, 30);
                 }
             }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-        
-        jssor_2_slider_init = function() {
-
-            var jssor_2_options = {
-              $AutoPlay: 1,
-              $Idle: 5000,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
+            
+            function ScaleSlider2() {
                 var containerElement = jssor_2_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
                 if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_2_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
+					var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+					jssor_2_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider2, 30);
                 }
             }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-        
-        jssor_3_slider_init = function() {
-
-            var jssor_3_options = {
-              $AutoPlay: 1,
-              $Idle: 5000,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_3_slider = new $JssorSlider$("jssor_3", jssor_3_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
+            
+            function ScaleSlider3() {
                 var containerElement = jssor_3_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
@@ -166,38 +146,11 @@
                     jssor_3_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider3, 30);
                 }
             }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-        
-        jssor_4_slider_init = function() {
-
-            var jssor_4_options = {
-              $AutoPlay: 1,
-              $Idle: 5000,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_4_slider = new $JssorSlider$("jssor_4", jssor_4_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
+            
+            function ScaleSlider4() {
                 var containerElement = jssor_4_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
 
@@ -208,21 +161,37 @@
                     jssor_4_slider.$ScaleWidth(expectedWidth);
                 }
                 else {
-                    window.setTimeout(ScaleSlider, 30);
+                    window.setTimeout(ScaleSlider4, 30);
                 }
             }
 
             ScaleSlider();
+            ScaleSlider2();
+            ScaleSlider3();
+            ScaleSlider4();
 
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            
+            $Jssor$.$AddEvent(window, "load", ScaleSlider2);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider2);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider2);
+            
+            $Jssor$.$AddEvent(window, "load", ScaleSlider3);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider3);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider3);
+            
+            $Jssor$.$AddEvent(window, "load", ScaleSlider4);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider4);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider4);
             /*#endregion responsive code end*/
         };
         
+        
         $(document).on('ready', function() {
             $('.slider-resp-insta').slick({
-          	  infinite: true,
+              infinite: true,
           	  speed: 300,
           	  slidesToShow: 5,
           	  slidesToScroll: 1,
@@ -271,7 +240,7 @@
 
 
         .jssorb052 .i {position:absolute;cursor:pointer;}
-        .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+        .jssorb052 .i .b {fill:#E64D3C;fill-opacity:0.3;}
         .jssorb052 .i:hover .b {fill-opacity:.7;}
         .jssorb052 .iav .b {fill-opacity: 1;}
         .jssorb052 .i.idn {opacity:.3;}
@@ -287,25 +256,30 @@
 	      	padding: 0;
 	      	box-sizing: border-box;
 	        width: 100%;
+	        
 	        /*margin: 100px auto;*/
 	    }
 	
-	    .slick-slide {
+	    /*.slick-slide {
 	      margin: 0px 10px;
-	    }
+	    }*/
 	
 	    .slick-slide img {
-	      width: 100%;
+	      /*max-width:200px;
+	      max-height:200px;
+	      margin-left: auto;
+    	  margin-right: auto;;*/
+	      width: 90%;
 	      height:auto;
+	      margin-left: auto;
+    	  margin-right: auto;
 	    }
-	
-
     </style>
 
 </head>
 <body>
 
-	<div class="nav-container navbar-fixed-top nav-sticky">
+	<div class="nav-container navbar-fixed-top nav-sticky" >
 		<!-- <nav class="sub-navbar">
 			 <div class="list-select">
 				<div class="inner-select">
@@ -342,17 +316,15 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			        <a class="navbar-brand" href="index.html" style="width:150px">
-			          	<img src="images/logo2.png" alt="Navalli" >
+			        <a class="header-logo navbar-brand " href="index.html" style="position:absolute;width:150px;">
+			          	<img src="images/logo2.png" alt="Navalli">
 			        </a>
 	        	</div>
-	        	<div id="navbar" class="navbar-collapse collapse">
-	        		<!--  <ul style="float:left:right:-100px">
-	        			<li style="float:left;"><a href="#!" target="_blank"><img data-u="image" src="images/icon/fb.png" height="30px"/></a></li>
-						<li style="float:left;"><a href="#!" target="_blank"><img data-u="image" src="images/icon/ig.png" height="30px"/></a></li>
-	        		</ul> -->
-	        		
-			    	<li class="shopping-cart hidden">
+	        	
+			    <ul class="navbar-nav navbar-icons">
+			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
+					<li class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
+			    	<!--  <li class="shopping-cart">
 			            <a href="#!" class="li-icon" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
 			            </a>
@@ -392,26 +364,55 @@
 			                    </li>
 			                </div>
 			                <li class="dropdown-footer">
-				                <a href="cartsummary">View Cart</a>
+				                <a href="cart.html">View Cart</a>
 			                </li>
 			            </ul>
 			        </li>
-			        <li><a href="#!" class="li-icon hidden" id="trigger-overlay"><i class="lil-search"></i></a></li>
+			        <li><a href="#!" class="li-icon" id="trigger-overlay"><i class="lil-search"></i></a></li> -->
 			    </ul>
 	        	<div id="navbar" class="navbar-collapse collapse">
-	        		
-				    <!--  <ul class="nav navbar-nav navbar-left">
+				    <ul class="nav navbar-nav navbar-left hidden">
+				         <li>
+				            <a href="about.html">New <!--  <i class="caret"></i>--></a>
+				        </li>
+				        
 				        <li class="active">
-				            <a href="index.html" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Home <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
+				            <a href="index.html" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Makeup </a>
+				           	<div class="mega-dropdown1 dropdown-menu">
+				           		<ul class="mega-subcontent">
+				           		<li style="display:block;padding:3px 20px;"><p><b>Hi</b></p></li>
+				           		<!-- <li style="display:block;padding:0px 20px;"><h4>Test</h4></li> class="mega-tag" -->
 				                <li class="active"><a href="index.html">Home Default</a></li>
 				                <li><a href="index-2.html">Home Default Slider</a></li>
 				                <li><a href="index-3.html">Home Overlay Products</a></li>
 				                <li><a href="index-4.html#instagram">Home instagram section</a></li>
-				            </ul>
+				            	</ul>
+				            
+					            <ul class="mega-subcontent" >
+					            	<li style="display:block;padding:3px 20px;"><p><b>Hi</b></p></li>
+					                <li><a href="index.html">Home Default</a></li>
+					                <li><a href="index-2.html">Home Default Slider</a></li>
+					                <li><a href="index-3.html">Home Overlay Products</a></li>
+					                <li><a href="index-4.html#instagram">Home instagram section</a></li>
+					            </ul>
+					            <ul class="mega-subcontent" >
+					            	<li style="display:block;padding:3px 20px;"><p><b>Hi</b></p></li>
+					                <li><a href="index.html">Home Default</a></li>
+					                <li><a href="index-2.html">Home Default Slider</a></li>
+					                <li><a href="index-3.html">Home Overlay Products</a></li>
+					                <li><a href="index-4.html#instagram">Home instagram section</a></li>
+					            </ul>
+					            <ul class="mega-subcontent" >
+					            	<li style="display:block;padding:3px 20px;"><p><b>Hi</b></p></li>
+					                <li><a href="index.html">Home Default</a></li>
+					                <li><a href="index-2.html">Home Default Slider</a></li>
+					                <li><a href="index-3.html">Home Overlay Products</a></li>
+					                <li><a href="index-4.html#instagram">Home instagram section</a></li>
+					            </ul>
+				           	</div>
 				        </li>
 				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Shop <i class="caret"></i></a>
+				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Skin </a>
 				            <ul class="dropdown-menu">
 				                <li><a href="products.html">Full Width Shop</a></li>
 				                <li><a href="products-with-filter.html">Shop With Filter</a></li>
@@ -420,18 +421,9 @@
 				                <li><a href="product.html">Simple Product</a></li>
 				            </ul>
 				        </li>
+				       
 				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">eCommerce Pages <i class="caret"></i></a>
-				            <ul class="dropdown-menu">
-				                <li><a href="wishlist.html">Wishlist</a></li>
-				                <li><a href="cart.html">Cart</a></li>
-				                <li><a href="checkout.html">Checkout</a></li>
-				                <li><a href="order-received.html">Order Received</a></li>
-				                <li><a href="order-tracking.html">Order Tracking</a></li>
-				            </ul>
-				        </li>
-				        <li>
-				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Pages <i class="caret"></i></a>
+				            <a href="#!" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Bestseller</a>
 				            <ul class="dropdown-menu">
 				                <li><a href="page.html">Page Default</a></li>
 				                <li><a href="login-register.html">Login / Register</a></li>
@@ -439,14 +431,13 @@
 				                <li><a href="faqs.html">FAQ'S</a></li>
 				            </ul>
 				        </li>
-				        <li><a href="about.html">About</a></li>
-				        <li><a href="contact.html">Contact</a></li>
-				    </ul>-->
-			    </div> <!--/.nav-collapse -->
+				        <li><a href="about.html">How To</a></li>
+				        <li><a href="contact.html">FAQ</a></li>
+				    </ul>
+			    </div><!--/.nav-collapse -->
 	      	</div><!--/.container -->
 	    </nav>
 	</div><!-- /.nav-container -->
-
 	<div class="swiper-slider">
 		<!-- Slider main container -->
 		<div class="swiper-container fullscreen">
@@ -483,21 +474,21 @@
 	<section class="section collections" id="home-collections">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-sm-2 col-lg-2"></div>
-				<div class="col-md-8 col-sm-8 col-lg-8">
-					<div class="row"> 
+				<!--  <div class="col-md-1 col-sm-1 col-lg-1"></div>
+				<div class="col-md-10 col-sm-10 col-lg-10">
+					<div class="row"> -->
 					
 					
-					<div style="padding-left:5px;padding-right:5px;padding-bottom:20px;" class="col-md-6 col-sm-6 col-lg-6" > 
+					<div style="padding-left:5px;padding-right:5px;padding-bottom:10px;" class="col-xs-12 col-md-6 col-lg-6" > 
 					<div class="clearfix">
 					
-					<div id="jssor_1" style="position:relative;margin: 0 auto;top:0px;left:0px;width:750px;height:500px;overflow:hidden;visibility:hidden;">
+					<div id="jssor_1" style="position:relative;margin: 0 auto;top:0px;left:0px;width:570px;height:410px;overflow:hidden;visibility:hidden;">
 				     
 				        <!-- Loading Screen -->
 				        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 				            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 				        </div>
-				        <div data-u="slides" style="cursor:default;padding:10px;top:0px;left:0px;width:750px;height:500px;overflow:hidden;">
+				        <div data-u="slides" style="cursor:default;padding:0;top:0px;left:0px;width:570px;height:410px;overflow:hidden;">
 				            <div>
 				                <img data-u="image" src="images/01.jpg" />
 				            </div>
@@ -508,14 +499,14 @@
 				        </div>
 				        <!-- Bullet Navigator -->
 				        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-				            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+				            <div data-u="prototype" class="i" style="width:12px;height:12px;">
 				                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
 				                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
 				                </svg>
 				            </div>
 				        </div>
 				    </div>
-				    <script type="text/javascript">jssor_1_slider_init();</script>
+				    
 					</div>
 					
 					<!--  <a href="#!">
@@ -523,17 +514,17 @@
 					</a> -->
 				</div><!-- /.collection -->
 					
-					<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="col-xs-12 col-md-6 col-lg-6">
 					
 					<div class="row">
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 col-md-6 col-lg-6" >
+						<div style="padding-left:5px;padding-right:5px;" class="col-xs-6 col-md-6 col-lg-6" >
 							<div class="clearfix">
-							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
+							<div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:570px;height:420px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:700px;height:440px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;padding:0px 10px 10px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/02.jpg" />
 					            </div>
@@ -551,20 +542,20 @@
 					            </div>
 					        </div>
 				    	</div>
-				    	<script type="text/javascript">jssor_2_slider_init();</script>
+				    	<!--  <script type="text/javascript">jssor_2_slider_init();</script> -->
 				    	</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/02.jpg" class="img-responsive" alt="">
 							</a>-->
 						</div><!-- /.collection -->
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-6 col-md-6 col-lg-6">
+						<div style="padding-left:5px;padding-right:5px;" class="col-xs-6 col-md-6 col-lg-6">
 							<div class="clearfix">
-							<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:460px;overflow:hidden;visibility:hidden;">
+							<div id="jssor_3" style="position:relative;margin:0 auto;top:0px;left:0px;width:570px;height:420px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:700px;height:440px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
 					            </div>
@@ -582,20 +573,20 @@
 					            </div>
 					        </div>
 				    	</div>
-				    	<script type="text/javascript">jssor_3_slider_init();</script>
+				    	<!--  <script type="text/javascript">jssor_3_slider_init();</script> -->
 							</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/03.jpg" class="img-responsive" alt="">
 							</a> -->
 						</div><!-- /.collection -->
-						<div style="padding-left:5px;padding-right:5px;" class="col-sm-12 col-md-12 col-lg-12">
+						<div style="padding-left:5px;padding-right:5px;" class="col-md-12 col-lg-12">
 							<div class="clearfix">
-							<div id="jssor_4" style="position:relative;padding-top:10px;margin:0 auto;top:0px;left:0px;width:700px;height:240px;overflow:hidden;visibility:hidden;">
+							<div id="jssor_4" style="position:relative;padding-top:10px;margin:0 auto;top:0px;left:0px;width:1140px;height:405px;overflow:hidden;visibility:hidden;">
 					        <!-- Loading Screen -->
 					        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 					            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
 					        </div>
-					        <div data-u="slides" style="cursor:default;padding: 0px 10px 10px 10px;top:0px;left:0px;width:740px;height:250px;overflow:hidden;">
+					        <div data-u="slides" style="cursor:default;padding: 0px 10px 0px 10px;top:0px;left:0px;width:1140px;height:405px;overflow:hidden;">
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/4.jpg" />
 					            </div>
@@ -613,7 +604,7 @@
 					            </div>
 					        </div>
 				    	</div>
-				    	<script type="text/javascript">jssor_4_slider_init();</script>
+				    	<!--  <script type="text/javascript">jssor_4_slider_init();</script> -->
 							</div>
 							<!--  <a href="#!">
 								<img src="build/img/collections/04.jpg" class="img-responsive" alt="">
@@ -622,11 +613,11 @@
 					</div>
 				</div>
 				
-				</div>
+				<!--</div>
 				
-				</div>
-				<div class="col-md-2 col-sm-2"></div>
-				
+				 </div>
+				<div class="col-md-1 col-sm-1 col-lg-1"></div> -->
+				<script type="text/javascript">jssor_1_slider_init();</script>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /.collections -->
@@ -635,94 +626,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<h3>Playing Favorites</h3>
-					<p>Share a selfie wearing your face Navalli Hill products with MAKEUPMY</p>
+					<h3 style="padding:0px;margin:0px;"><strong>Playing Favorites</strong></h3>
+					<p style="padding-bottom:15px;"><i>Share a selfie wearing your fave Navalli Hill products with #NHMAKEUPMY</i></p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="section slider-resp-insta slider-insta">
-						<div>
+					<div class="section slider-resp-insta slider-insta slider">
+						<div > 
 							<a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" />
 							</a>
 					    </div>
 					    <div>
 					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
 							</a>
 					    </div>
 					    <div>
 					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
 							</a>
 					    </div>
 					    <div>
 					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
 							</a>
 					    </div>
 					    <div>
 					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
+								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
 							</a>
 					    </div>
 					</div>
-					
-				
-						<!--<div class="pos-r clearfix">
-							<ul> <!-- text-align:center; -->
-							   <!--  <li style="text-align:center;display:inline-block;*display:inline;width:19%">
-		    					<!--   style="float:left;width:20%;padding:30px" -->
-							    <!-- <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								    <img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-							    </a>
-							    </li>
-							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
-							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-							    </a>
-							    </li>
-		 						<li style="text-align:center;display:inline-block;*display:inline;width:19%">
-							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-							    </a>
-							    </li>
-							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
-							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-							    </a>
-							    </li>
-							    <li style="text-align:center;display:inline-block;*display:inline;width:19%">
-							    <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								    <img data-u="image" src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" width="120px" height="120px"/>
-							    </a>
-							    </li>
-							</ul>
-						</div>-->
-					</div>
-					<div class="col-md-2">
-					
-					</div>
-				
-				
 			</div>
+			
 		</div>
 	</section><!-- /.instagram -->
 
-	<section class="section promotions small-padding-top" id="promotions">
-		
+	<section class="section promotions small-padding-top" id="promotions">	
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 section-title text-center">
-					<h3><i class="line"></i>Find Us At<i class="line"></i></h3>
-					<p>Checkout the Latest and Hottest!</p>
+				<div class="col-sm-12 text-center"> <!-- section-title -->
+					<h3 class="index-insta-header"><strong><i class="index-insta-line"></i>Find Us At<i class="index-insta-line"></i></strong></h3> 
+					<p style="padding:0px;;color:#000000;font-weight:400"><i>Checkout the Latest and Hottest!</i></p>
 				</div>
 				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<div class="row">
 						<div class="col-md-4" style="text-align:center;">
 						 <a href="https://shopee.com.my/" target="_blank">
 								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
@@ -738,64 +686,50 @@
 								    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
 							    </a>
 						</div>
-						</div>
-						<!--  <div class="pos-r clearfix">
-							<ul style="text-align:center;">
-							    <li style="display:inline-block;*display:inline;padding:5px;">
-		    					<!--   style="float:left;width:20%;padding:30px" -->
-							    <!--  <a href="https://shopee.com.my/" target="_blank">
-								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
-							    </a>
-							    </li>
-							    <li style="display:inline-block;*display:inline;padding:5px">
-							    <a href="http://www.11street.my/" target="_blank">
-								    <img data-u="image" src="images/brands/11street.png" height="120px"/>
-							    </a>
-							    </li>
-		 						<li style="display:inline-block;*display:inline;padding:5px">
-							    <a href="https://www.lazada.com.my/" target="_blank">
-								    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
-							    </a>
-							    </li>
-							</ul>
-						</div>-->
-					</div>
-					<div class="col-md-2"></div>
 				</div>
 				
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /.promotions -->	
+	
 	<footer class="footer">
 		<div class="container">
 			<div class="widgets">
 				<div class="row">
-					<div class="col-sm-6 widget widget-about">
-						<h3 class="widget-title" style="color:white">NEED HELP ? </h3>
-						<p style="color:white">admin@nhmakeup.com.my</p>
-						<br>
-						<h4 style="color:white">OPERATION HOURS</h4>
-						<p style="color:white">Mon - Fri (except Public Holiday) <br>9.00am - 6.00pm</p>
+						<div class="hidden-md hidden-lg"><div class="col-xs-1"></div> </div>
+						<div class="col-xs-11 col-md-6 widget widget-about">
+							
+							<h3 style="color:white;margin-top:0px;"><strong>NEED HELP ?</strong> </h3>
+							<p style="color:white;font-weight:400;font-size:10pt;padding:0px;margin:0px;"><i>admin@nhmakeup.com.my</i></p>
+							<br>
+							<p style="display:inline-block;background-color:#d9d7d4;height:1px;width:60%;"></p>
+							
+							<p style="color:white;font-size:10pt;padding-top:5px;">OPERATION HOURS</p>
+							<p style="color:white;font-weight:400;font-size:10pt;">Mon - Fri (except public holiday) <br>9.00AM - 6.00PM</p>
+							
+						</div><!-- ./widget -->
 						
-					</div><!-- ./widget -->
-					<div class="col-sm-6 widget widget-newsletter">
-						<h3 class="widget-title" style="color:white" >Join our Newsletter</h3>
-						<form action="#!" method="POST" class="inputs-border clearfix">
-							<div class="form-group">
-								<input type="email" name="email" placeholder="Your Email" class="form-control" autocomplete="off">
-								<button type="submit" class="btn btn-primary"><i class="lil-long-arrow-right"></i></button>
-							</div>
-						</form>
-						<ul class="social">
-							<li><a href="#!" target="_blank"><img data-u="image" src="images/icon/fb.png" height="30px"/></a></li>
-							<li><a href="#!" target="_blank"><img data-u="image" src="images/icon/ig.png" height="30px"/></a></li>
-						</ul>
-					</div><!-- ./widget -->
-				</div><!-- /.row -->
+						<div class="hidden-md hidden-lg"><div class="col-xs-1"></div> </div>
+						<div class="col-xs-11 col-md-6 widget widget-newsletter">
+							<h3 class="widget-title" style="color:white" ><strong>Join our Newsletter</strong></h3>
+							<form action="#!" method="POST" class="inputs-border clearfix">
+								<div class="form-group">
+									<input type="email" name="email" placeholder="admin@nhmakeup.com.my" class="form-control" autocomplete="off">
+									<button type="submit" class="btn btn-primary"><i class="lil-long-arrow-right"></i></button>
+								</div>
+							</form>
+							<ul class="social">
+								<li><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
+								<li><a href="https://www.instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="39px"/></a></li>
+							</ul>
+						</div><!-- ./widget -->
+					
+					
+				
 			</div><!-- /.widgets -->
 		</div><!-- /.container -->
 		<div class="copy-right text-center" style="backgroud-color:#000000">
-			<p>© Copyright 2018. All Rights Reserved. Created by </p>
+			<p style="color:white;font-weight:400;font-size:9pt;">Copyright © NAVALLI HILL MALAYSIA. All rights reserved. </p>
 		</div>
 	</footer><!-- /.footer -->
 	
