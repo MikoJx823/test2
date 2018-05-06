@@ -282,7 +282,7 @@
 	        	
 			    <ul class="navbar-nav navbar-icons">
 			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
-					<li class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
+					<li style="padding:0px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
 			    	<li class="shopping-cart">
 			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
