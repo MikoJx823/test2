@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
@@ -131,7 +131,6 @@
     margin: 0;
 
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li
@@ -178,7 +177,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 8px;
     line-height: 20px;
 
     position: absolute;
@@ -192,13 +191,14 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #E64D3C;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    /*opacity: .75;*/
+    opacity:1;
+    color: #E64D3C;
 }

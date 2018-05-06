@@ -7,7 +7,7 @@ onsaleicon{width:50px;height:50px;line-height:50px;top:0px;right:0px;background-
 .index-insta-header .index-insta-line:first-child{right:-75px}.index-insta-header .index-insta-line:last-child{left:-75px}
 
 @media only screen and (min-width:993px){.mega-dropdown{width:400px;} .header-logo{top:25px;!important; } .header-social-icon{top:-4px;!important;}}
-@media only screen and (max-width:993px){.header-logo{top:10px;!important; }}
+@media only screen and (max-width:993px){.header-logo{top:10px;!important;} .index-main-slider{min-height:100px;!important; max-height:200px;!important} .index-resp-container{padding:20px;!important!}}
 @media screen and (max-width:767px){.footer-align{text-align:center}}
 
 

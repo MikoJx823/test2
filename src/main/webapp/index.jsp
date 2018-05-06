@@ -47,8 +47,8 @@
 	
 	
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="js/min.js"></script>
-  	<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	
 	<script src="js/jssor.slider.min.js" type="text/javascript"></script>
    
     <script type="text/javascript">
@@ -111,80 +111,35 @@
             function ScaleSlider() {
                 var containerElement = jssor_1_slider.$Elmt.parentNode;
                 var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
+                var containerElement2 = jssor_2_slider.$Elmt.parentNode;
+                var containerWidth2 = containerElement2.clientWidth;
+                var containerElement3 = jssor_3_slider.$Elmt.parentNode;
+                var containerWidth3 = containerElement3.clientWidth;
+                var containerElement4 = jssor_4_slider.$Elmt.parentNode;
+                var containerWidth4 = containerElement4.clientWidth;
+                
+                if (containerWidth && containerWidth2 && containerWidth3 && containerWidth4) {
                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
+                    var expectedWidth2 = Math.min(MAX_WIDTH || containerWidth2, containerWidth2);
+                    var expectedWidth3 = Math.min(MAX_WIDTH || containerWidth3, containerWidth3);
+                    var expectedWidth4 = Math.min(MAX_WIDTH || containerWidth4, containerWidth4);
+                    
                     jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            
-            function ScaleSlider2() {
-                var containerElement = jssor_2_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-					var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-					jssor_2_slider.$ScaleWidth(expectedWidth);
-                } else {
-                    window.setTimeout(ScaleSlider2, 30);
+                    jssor_2_slider.$ScaleWidth(expectedWidth2);
+                    jssor_3_slider.$ScaleWidth(expectedWidth3);
+                    jssor_4_slider.$ScaleWidth(expectedWidth4);
+                }else {
+                    window.setTimeout(ScaleSlider, 0);
                 }
             }
             
-            function ScaleSlider3() {
-                var containerElement = jssor_3_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_3_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider3, 30);
-                }
-            }
-            
-            function ScaleSlider4() {
-                var containerElement = jssor_4_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_4_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider4, 30);
-                }
-            }
-
             ScaleSlider();
-            ScaleSlider2();
-            ScaleSlider3();
-            ScaleSlider4();
 
             $Jssor$.$AddEvent(window, "load", ScaleSlider);
             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
             
-            $Jssor$.$AddEvent(window, "load", ScaleSlider2);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider2);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider2);
             
-            $Jssor$.$AddEvent(window, "load", ScaleSlider3);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider3);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider3);
-            
-            $Jssor$.$AddEvent(window, "load", ScaleSlider4);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider4);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider4);
             /*#endregion responsive code end*/
         };
         
@@ -201,7 +156,8 @@
           	      settings: {
           	        slidesToShow: 3,
           	        slidesToScroll: 1,
-          	        infinite: true
+          	        infinite: true,
+          	      	dots:true
           	      }
           	    },
           	    {
@@ -209,7 +165,8 @@
           	      settings: {
           	        slidesToShow: 2,
           	        slidesToScroll: 1,
-          	        infinite: true
+          	        infinite: true,
+          	      	dots:true
           	      }
           	    }
           	    // You can unslick at a given breakpoint now by adding:
@@ -274,6 +231,8 @@
 	      margin-left: auto;
     	  margin-right: auto;
 	    }
+	    
+	    
     </style>
 
 </head>
@@ -324,8 +283,8 @@
 			    <ul class="navbar-nav navbar-icons">
 			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
 					<li class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
-			    	<!--  <li class="shopping-cart">
-			            <a href="#!" class="li-icon" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+			    	<li class="shopping-cart">
+			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
 			            </a>
 			            <ul class="dropdown-menu">
@@ -368,7 +327,7 @@
 			                </li>
 			            </ul>
 			        </li>
-			        <li><a href="#!" class="li-icon" id="trigger-overlay"><i class="lil-search"></i></a></li> -->
+			        <li><a href="#!" class="li-icon hidden" id="trigger-overlay"><i class="lil-search"></i></a></li>
 			    </ul>
 	        	<div id="navbar" class="navbar-collapse collapse">
 				    <ul class="nav navbar-nav navbar-left hidden">
@@ -438,14 +397,15 @@
 	      	</div><!--/.container -->
 	    </nav>
 	</div><!-- /.nav-container -->
-	<div class="swiper-slider">
+	
+	<div class="swiper-slider hidden-xs hidden-sm">
 		<!-- Slider main container -->
-		<div class="swiper-container fullscreen">
+		<div class="swiper-container " > <!-- style="min-height:100px;max-height:200px;!important" -->
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <div class="swiper-slide" style="background-image: url(images/slides/01.jpg);">
-		        	<div class="valign-wrapper fullscreen">
+		        <div class="swiper-slide" style="background-image: url(images/slides/03.jpg);  ">
+		        	<div class="valign-wrapper ">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
@@ -466,12 +426,33 @@
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
 		    <!-- If we need navigation buttons -->
-		    <div class="swiper-button-prev"><!--  <i class="lil-chevron_left"></i> --></div>
-		    <div class="swiper-button-next"><!--<i class="lil-chevron_right"></i> --></div>
+		    <div class="swiper-button-prev"><i class="lil-chevron_left"></i> </div>
+		    <div class="swiper-button-next"><i class="lil-chevron_right"></i> </div>
 		</div>
 	</div><!-- /.swiper-slider -->
+	
+	<div class="swiper-slider hidden-md hidden-lg" style="margin">
+		<!-- Slider main container -->
+		<div class="swiper-container fullscreen" style="min-height:100px;max-height:400px;!important"> <!--  -->
+		    <!-- Additional required wrapper -->
+		    <div class="swiper-wrapper text-center">
+		        <!-- Slides -->
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		    </div>
+		    <!-- If we need pagination -->
+		    <div class="swiper-pagination"></div>
+		    <!-- If we need navigation buttons -->
+		   <!--  <div class="swiper-button-prev"> <i class="lil-chevron_left"></i> </div>
+		    <div class="swiper-button-next">i class="lil-chevron_right"></i></div> -->
+		</div>
+	</div><!-- /.swiper-slider -->
+	
+	
 
-	<section class="section collections" id="home-collections">
+	<section class="section collections index-resp-container" id="home-collections" >
 		<div class="container">
 			<div class="row">
 				<!--  <div class="col-md-1 col-sm-1 col-lg-1"></div>
@@ -492,7 +473,7 @@
 				            <div>
 				                <img data-u="image" src="images/01.jpg" />
 				            </div>
-				            <div data-p="170.00"><a href="#">
+				            <div><a href="#">
 				                <img data-u="image" src="images/01.jpg" />
 				            	</a>
 				            </div>
@@ -528,7 +509,7 @@
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/02.jpg" />
 					            </div>
-					            <div data-p="170.00"><a href="#">
+					            <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/02.jpg"" />
 					            	</a>
 					            </div>
@@ -559,7 +540,7 @@
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
 					            </div>
-					            <div data-p="170.00"><a href="#">
+					            <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
 					            	</a>
 					            </div>
@@ -590,7 +571,7 @@
 					            <div>
 					                <img data-u="image" class="img-responsive" src="images/4.jpg" />
 					            </div>
-					            <div data-p="170.00"><a href="#">
+					            <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/4.jpg" />
 					            	</a>
 					            </div>
@@ -754,7 +735,8 @@
 	</a>
 
 	<!-- All Theme Scripts -->
-
+	<script type="text/javascript" src="js/min.js"></script>
+  	<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
