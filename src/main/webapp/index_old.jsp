@@ -655,16 +655,15 @@
 		</div>
 	</section><!-- /.instagram -->
 
-	<section class="section small-padding-top"> <!-- paddings:70px -->
+	<section class="section small-padding-top">	
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 text-center">
+				<div class="col-sm-12 text-center"> <!-- section-title -->
 					<h3 class="index-insta-header"><strong><i class="index-insta-line"></i>Find Us At<i class="index-insta-line"></i></strong></h3> 
 					<p style="padding:0px;;color:#000000;font-weight:400"><i>Checkout the Latest and Hottest!</i></p>
 				</div>
-			</div>
-			<div class="row">
-				
+				<div class="row">
+					
 					<div class="col-xs-12 col-md-4" style="text-align:center;">
 						<a href="https://shopee.com.my/" target="_blank">
 								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
