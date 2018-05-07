@@ -290,7 +290,7 @@
 	        	</div>
 	        	
 			    <ul class="navbar-nav navbar-icons">
-			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
+			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
 					<li style="padding:0px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
 			    	<li class="shopping-cart">
 			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
@@ -666,12 +666,12 @@
 			<div class="row">
 				
 					<div class="col-xs-12 col-md-4" style="text-align:center;">
-						<a href="https://shopee.com.my/shop/63376460/" target="_blank">
+						<a href="https://shopee.com.my/" target="_blank">
 								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
 							    </a>
 					</div>
 						<div class="col-xs-12 col-md-4" style="text-align:center;">
-						<a href="http://www.11street.my/store/navallihill?sellerHmpgUrl=navallihill" target="_blank">
+						<a href="http://www.11street.my/" target="_blank">
 								    <img data-u="image" src="images/brands/11street.png" height="120px"/>
 							    </a>
 						</div>
@@ -713,7 +713,7 @@
 								</div>
 							</form>
 							<ul class="social">
-								<li><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
+								<li><a href="https://www.facebook.com/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
 								<li><a href="https://www.instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="39px"/></a></li>
 							</ul>
 						</div><!-- ./widget -->
@@ -750,17 +750,6 @@
 	<!-- All Theme Scripts -->
 	<script type="text/javascript" src="js/min.js"></script>
   	<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-	
-	<script>
-	function onSubscripe(){
-		
-		
-		//SubscribeServlet
-		
-	}
-	
-	
-	</script>
-	
+
 </body>
 </html>

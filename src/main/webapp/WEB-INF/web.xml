@@ -4,24 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>SubscribeServlet</servlet-name>
-  	<display-name>SubscribeServlet</display-name>
-  	<description></description>
-  	<servlet-class>com.project.servlet.SubscribeServlet</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>StringUtil</servlet-name>
-  	<display-name>StringUtil</display-name>
-  	<description></description>
-  	<servlet-class>com.project.util.StringUtil</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>SubscribeServlet</servlet-name>
-  	<url-pattern>/SubscribeServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>StringUtil</servlet-name>
-  	<url-pattern>/StringUtil</url-pattern>
-  </servlet-mapping>
 </web-app>
