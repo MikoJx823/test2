@@ -278,20 +278,20 @@
 		</nav><!-- /.sub-navbar -->
 	    <nav class="navbar navbar-default" style="background-color:#000000">
 	      	<div class="container">
-	        	<div class="navbar-header">
-			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        	<div class="navbar-header header-height">
+			        <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
-			        </button>
+			        </button>-->
 			        <a class="header-logo navbar-brand " href="index.html" style="position:absolute;width:150px;">
 			          	<img src="images/logo2.png" alt="Navalli">
 			        </a>
 	        	</div>
 	        	
-			    <ul class="navbar-nav navbar-icons">
-			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
-					<li style="padding:0px;margin:0px;" class="header-social-icon hidden-sm hidden-xs"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
+			    <ul class="navbar-nav navbar-icons" style="right:5px"> <!-- hidden-sm hidden-xs -->
+			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon"><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
+					<li style="padding:0px;margin:0px;" class="header-social-icon"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
 			    	<li class="shopping-cart">
 			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
@@ -612,7 +612,7 @@
 		</div><!-- /.container -->
 	</section><!-- /.collections -->
 	
-	<section class="section small-padding-top" style="background-color:#f8f8f8;"> <!-- paddings:70px -->
+	<section class="section" style="background-color:#f8f8f8;"> <!-- psmall-padding-top addings:70px -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -655,7 +655,7 @@
 		</div>
 	</section><!-- /.instagram -->
 
-	<section class="section small-padding-top"> <!-- paddings:70px -->
+	<section class="section brand-section"> <!-- paddings:70px -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -664,25 +664,22 @@
 				</div>
 			</div>
 			<div class="row">
-				
 					<div class="col-xs-12 col-md-4" style="text-align:center;">
 						<a href="https://shopee.com.my/shop/63376460/" target="_blank">
-								    <img data-u="image" src="images/brands/shopee.png" height="120px"/>
+								    <img data-u="image" src="images/brands/shopee.png" width="200px" height="auto"/> <!-- height:100px -->
 							    </a>
 					</div>
 						<div class="col-xs-12 col-md-4" style="text-align:center;">
 						<a href="http://www.11street.my/store/navallihill?sellerHmpgUrl=navallihill" target="_blank">
-								    <img data-u="image" src="images/brands/11street.png" height="120px"/>
+								    <img data-u="image" src="images/brands/11street.png" width="200px" height="auto"/>
 							    </a>
 						</div>
 						<div class="col-xs-12 col-md-4" style="text-align:center;">
 						<a href="https://www.lazada.com.my/" target="_blank">
-								    <img data-u="image" src="images/brands/lazada.png" height="120px"/>
-							    </a>
+							<img data-u="image" src="images/brands/lazada.png" width="200px" height="auto" align="bottom"/>
+						</a>
 						</div>
-				
 			</div>
-			
 		</div>
 	</section><!-- /.instagram -->
 	
