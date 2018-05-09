@@ -419,7 +419,7 @@
 		        		</div>
 		        	</div>
 		        </div>
-		        <div class="swiper-slide" style="background-image: url(images/slides/02.jpg);">
+		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up.jpg);">
 		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-8" data-swiper-parallax="-100">
 		        		</div>
@@ -447,9 +447,8 @@
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
 		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/Main-Banner-Cover-Up-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		       
 		    </div>
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
