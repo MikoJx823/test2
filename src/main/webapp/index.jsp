@@ -413,24 +413,31 @@
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <div class="swiper-slide" style="background-image: url(images/slides/03.jpg);  ">
-		        	<div class="valign-wrapper ">
+		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up.jpg);">
+		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
 		        </div>
-		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up.jpg);">
+		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up-02.jpg);">
 		        	<div class="valign-wrapper fullscreen">
-		        		<div class="valign col-xs-offset-8" data-swiper-parallax="-100">
+		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
 		        </div>
-		        <div class="swiper-slide" style="background-image: url(images/slides/03.jpg);">
+		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up-03.jpg);">
 		        	<div class="valign-wrapper fullscreen">
-		        		<div class="valign col-xs-offset-5">
+		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
 		        </div>
+		        <!--  <div class="swiper-slide" style="background-image: url(images/slides/03.jpg);">
+		        	<div class="valign-wrapper fullscreen">
+		        		<div class="valign col-xs-offset-3">
+		        		</div>
+		        	</div>
+		        </div>-->
+		        
 		    </div>
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
