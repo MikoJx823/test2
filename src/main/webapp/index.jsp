@@ -211,9 +211,10 @@
         .slider-insta {
 	    	margin: 0;
 	      	padding: 0;
-	      	box-sizing: border-box;
 	        width: 100%;
-	        
+	        box-sizing: border-box;
+	        -moz-box-sizing: border-box;
+  			-webkit-box-sizing: border-box;
 	        /*margin: 100px auto;*/
 	    }
 	    .slick-prev,
@@ -229,17 +230,37 @@
 	    /*.slick-slide {
 	      margin: 0px 10px;
 	    }*/
-	
+		.slick-slide {
+	       position: relative;
+		   width: 20%;
+		   margin: 15px;
+		   overflow: hidden;
+	    }
+	    
 	    .slick-slide img {
 	      /*max-width:200px;
 	      max-height:200px;
 	      margin-left: auto;
     	  margin-right: auto;;*/
-	      width: 90%;
+		  /* max-width: 100%; 
+    	  width:100%;
+	      height:100%; */
+	      max-width: 100%;
 	      height:auto;
 	      margin-left: auto;
     	  margin-right: auto;
+    	  -moz-transition: all 0.3s;
+  		  -webkit-transition: all 0.3s;
+  		  transition: all 0.3s;
+  		  opacity: .7;
 	    }
+	    
+	    .slick-slide:hover img {
+	      -moz-transform: scale(1.1);
+		  -webkit-transform: scale(1.1);
+		  transform: scale(1.1);
+		  opacity:1;
+		}
 	    
 	    
     </style>
