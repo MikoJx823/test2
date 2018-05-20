@@ -507,21 +507,21 @@
 				        </div>
 				        <div data-u="slides" style="cursor:default;padding:0;top:0px;left:0px;width:570px;height:410px;overflow:hidden;">
 				            <div>
-				                <img data-u="image" src="images/01.jpg" />
+				                <img data-u="image" src="images/banner/sub-left.jpg" />
 				            </div>
-				            <div><a href="#">
+				            <!--  <div><a href="#">
 				                <img data-u="image" src="images/01.jpg" />
 				            	</a>
-				            </div>
+				            </div> -->
 				        </div>
 				        <!-- Bullet Navigator -->
-				        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+				        <!--<div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
 				            <div data-u="prototype" class="i" style="width:12px;height:12px;">
 				                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
 				                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
 				                </svg>
 				            </div>
-				        </div>
+				        </div> -->
 				    </div>
 				    
 					</div>
