@@ -7,14 +7,6 @@
 	response.setContentType("text/html;charset=utf-8");
 	response.setCharacterEncoding("UTF-8");
 	request.setCharacterEncoding("UTF-8");
-	
-	
-	//List<BannerInfoBean> bannerMain = BannerService.getInstance().getFrontListByPosition(StaticValueUtil.BANNER_INDEX_MAIN);
-	//List<BannerInfoBean> bannerSubLeft = BannerService.getInstance().getFrontListByPosition(StaticValueUtil.BANNER_INDEX_SUB_L);
-	//List<BannerInfoBean> bannerSubRightTop = BannerService.getInstance().getFrontListByPosition(StaticValueUtil.BANNER_INDEX_SUB_R_T);
-	//List<BannerInfoBean> bannerSubRightBottom1 = BannerService.getInstance().getFrontListByPosition(StaticValueUtil.BANNER_INDEX_SUB_R_B_1);
-	//List<BannerInfoBean> bannerSubRightBottom2 = BannerService.getInstance().getFrontListByPosition(StaticValueUtil.BANNER_INDEX_SUB_R_B_2);
-
 %>
 
 <!DOCTYPE html>
@@ -312,7 +304,7 @@
 	        	
 			    <ul class="navbar-nav navbar-icons" style="right:5px"> <!-- hidden-sm hidden-xs -->
 			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon"><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
-					<li style="padding:0px;margin:0px;" class="header-social-icon"><a href="http://instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
+					<li style="padding:0px;margin:0px;" class="header-social-icon"><a href="https://www.instagram.com/navallihill.my/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
 			    	<li class="shopping-cart">
 			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
 			                <i class="lil-shopping_cart"></i><span class="badge">4</span>
@@ -434,13 +426,19 @@
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up.jpg);">
+		        <div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Cover-Up-02.jpg);">
 		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
 		        </div>
-		        <div class="swiper-slide" style="background-image: url(images/slides/Main-Banner-Cover-Up-02.jpg);">
+		        <div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Opening-Web.jpg);">
+		        	<div class="valign-wrapper fullscreen">
+		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
+		        		</div>
+		        	</div>
+		        </div>
+		        <!--<div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Cover-Up.jpg);">
 		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
@@ -474,9 +472,8 @@
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/03-m.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/slides/Main-Banner-Cover-Up-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
-		       
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/banner/Main-Banner-Cover-Up-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		        <img class="swiper-slide hidden-md hidden-lg" src="images/banner/Main-Banner-Opening-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
 		    </div>
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
@@ -543,21 +540,21 @@
 					        </div>
 					        <div data-u="slides" style="cursor:default;padding:0px 10px 10px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
-					                <img data-u="image" class="img-responsive" src="images/02.jpg" />
+					                <img data-u="image" class="img-responsive" src="images/banner/SubRight_Top_Left.jpg" />
 					            </div>
-					            <div><a href="#">
+					            <!--  <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/02.jpg"" />
 					            	</a>
-					            </div>
+					            </div> -->
 					        </div>
 					        <!-- Bullet Navigator -->
-					        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:30px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+					        <!--  <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:30px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
 					            <div data-u="prototype" class="i" style="width:16px;height:16px;">
 					                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
 					                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
 					                </svg>
 					            </div>
-					        </div>
+					        </div> -->
 				    	</div>
 				    	<!--  <script type="text/javascript">jssor_2_slider_init();</script> -->
 				    	</div>
@@ -574,21 +571,21 @@
 					        </div>
 					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
-					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
+					                <img data-u="image" class="img-responsive" src="images/banner/SubRight_Top_Right.jpg" />
 					            </div>
-					            <div><a href="#">
+					            <!--  <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
 					            	</a>
-					            </div>
+					            </div> -->
 					        </div>
 					        <!-- Bullet Navigator -->
-					        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:30px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+					        <!--<div data-u="navigator" class="jssorb052" style="position:absolute;bottom:30px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
 					            <div data-u="prototype" class="i" style="width:16px;height:16px;">
 					                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
 					                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
 					                </svg>
 					            </div>
-					        </div>
+					        </div> -->
 				    	</div>
 				    	<!--  <script type="text/javascript">jssor_3_slider_init();</script> -->
 							</div>
@@ -644,35 +641,40 @@
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<h3 style="padding:0px;margin:0px;"><strong>Playing Favorites</strong></h3>
-					<p style="padding-bottom:15px;"><i>Share a selfie wearing your fave Navalli Hill products with #NHMAKEUPMY</i></p>
+					<p style="padding-bottom:15px;"><i>Share a selfie wearing your fave Navalli Hill products with #NAVALLIHILLMY</i></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 ">
 					 <div class="section slider-resp-insta slider-insta slider">
 						<div > 
-							<a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg" />
+							<a href="https://www.instagram.com/p/BjeoCswFcuV/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/6b5819755c38089d39450308916c7929/5BA7F3F3/t51.2885-15/s640x640/sh0.08/e35/33058364_1852146645087479_5345778323966394368_n.jpg" />
 							</a>
 					    </div>
 					    <div>
-					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
+					      <a href="https://www.instagram.com/p/BjeoAzElxSH/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/077dc63a11efcab75f62549e7ade6f81/5BBFE689/t51.2885-15/e35/32652366_449503188834370_7034076366832140288_n.jpg"/>
 							</a>
 					    </div>
 					    <div>
-					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
+					      <a href="https://www.instagram.com/p/Bjen_QRFfXw/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/7ed32323ec49b62fa20d0a1cef617b37/5BA936CF/t51.2885-15/e35/34146081_170424086965203_7975972929752006656_n.jpg"/>
 							</a>
 					    </div>
 					    <div>
-					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
+					      <a href="https://www.instagram.com/p/Bjen7xXFc65/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/19dee7145bf60d15a84dcf14449f6dab/5B9E5068/t51.2885-15/e35/32450830_426817201119158_3781866283499257856_n.jpg"/>
 							</a>
 					    </div>
 					    <div>
-					      <a href="https://www.instagram.com/p/BDX1oYbxJCK" target="_blank">
-								<img src="images/Dry-winter-snow-natural-hd-wallpaper.jpg"/>
+					      <a href="https://www.instagram.com/p/Bjen3zcFrSD/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/49451f81f7a2ef0f435897469d7f15a6/5BA51AF6/t51.2885-15/e35/33166644_253700658508604_8257472237452394496_n.jpg"/>
+							</a>
+					    </div>
+					    <div>
+					      <a href="https://www.instagram.com/p/BjenyFJFaMC/?taken-by=navallihill.my" target="_blank">
+								<img src="https://instagram.fkul8-1.fna.fbcdn.net/vp/7a00e9172212fb37a4c449470c8ac4d2/5BA77EFB/t51.2885-15/e35/34035942_186847411975366_5985188135594622976_n.jpg"/>
 							</a>
 					    </div>
 					</div>
@@ -718,7 +720,7 @@
 						<div class="col-xs-11 col-md-6 widget widget-about">
 							
 							<h3 style="color:white;margin-top:0px;"><strong>NEED HELP ?</strong> </h3>
-							<p style="color:white;font-weight:400;font-size:10pt;padding:0px;margin:0px;"><i>admin@nhmakeup.com.my</i></p>
+							<p style="color:white;font-weight:400;font-size:10pt;padding:0px;margin:0px;"><i>admin@navallihill.com.my</i></p>
 							<br>
 							<p style="display:inline-block;background-color:#d9d7d4;height:1px;width:60%;"></p>
 							
@@ -732,13 +734,13 @@
 							<h3 class="widget-title" style="color:white" ><strong>Join our Newsletter</strong></h3>
 							<form action="#!" method="POST" class="inputs-border clearfix">
 								<div class="form-group">
-									<input type="email" name="email" placeholder="admin@nhmakeup.com.my" class="form-control" autocomplete="off">
+									<input type="email" name="email" placeholder=" admin@navallihill.com.my" class="form-control" autocomplete="off">
 									<button type="submit" class="btn btn-primary"><i class="lil-long-arrow-right"></i></button>
 								</div>
 							</form>
 							<ul class="social">
 								<li><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
-								<li><a href="https://www.instagram.com/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="39px"/></a></li>
+								<li><a href="https://www.instagram.com/navallihill.my/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="39px"/></a></li>
 							</ul>
 						</div><!-- ./widget -->
 					
