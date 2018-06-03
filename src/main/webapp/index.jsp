@@ -303,7 +303,7 @@
 	        	</div>
 	        	
 			    <ul class="navbar-nav navbar-icons" style="right:5px"> <!-- hidden-sm hidden-xs -->
-			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon"><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
+			    	<li style="padding-right:10px;margin:0px;" class="header-social-icon"><a href="https://www.facebook.com/navallihillmy/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="33px"/></a></li>
 					<li style="padding:0px;margin:0px;" class="header-social-icon"><a href="https://www.instagram.com/navallihill.my/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="33px"/></a></li>
 			    	<li class="shopping-cart">
 			            <a href="#!" class="li-icon hidden" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
@@ -739,7 +739,7 @@
 								</div>
 							</form>
 							<ul class="social">
-								<li><a href="https://www.facebook.com/nhmakeupMY/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
+								<li><a href="https://www.facebook.com/navallihillmy/" target="_blank"><img data-u="image" src="images/icon/fb.png" height="39px"/></a></li>
 								<li><a href="https://www.instagram.com/navallihill.my/" target="_blank"><img data-u="image" src="images/icon/ig.png" height="39px"/></a></li>
 							</ul>
 						</div><!-- ./widget -->
