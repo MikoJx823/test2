@@ -705,7 +705,7 @@
 							    </a>
 						</div>
 						<div class="col-xs-12 col-md-4" style="text-align:center;">
-						<a href="https://www.lazada.com.my/" target="_blank">
+						<a href="https://www.lazada.com.my/shop/navalli-hill-my/?spm=a2o4k.pdp.seller.1.35d92bcf7sKh6J" target="_blank">
 							<img data-u="image" src="images/brands/lazada.png" width="200px" height="auto" align="bottom"/>
 						</a>
 						</div>
