@@ -426,18 +426,19 @@
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Cover-Up-02.jpg);">
-		        	<div class="valign-wrapper fullscreen">
-		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
-		        		</div>
-		        	</div>
-		        </div>
 		        <div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Opening-Web.jpg);">
 		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
 		        		</div>
 		        	</div>
 		        </div>
+		        <div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Cover-Up-02.jpg);">
+		        	<div class="valign-wrapper fullscreen">
+		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
+		        		</div>
+		        	</div>
+		        </div>
+		        
 		        <!--<div class="swiper-slide" style="background-image: url(images/banner/Main-Banner-Cover-Up.jpg);">
 		        	<div class="valign-wrapper fullscreen">
 		        		<div class="valign col-xs-offset-3" data-swiper-parallax="-100">
@@ -472,8 +473,8 @@
 		    <!-- Additional required wrapper -->
 		    <div class="swiper-wrapper text-center">
 		        <!-- Slides -->
-		        <img class="swiper-slide hidden-md hidden-lg" src="images/banner/Main-Banner-Cover-Up-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
 		        <img class="swiper-slide hidden-md hidden-lg" src="images/banner/Main-Banner-Opening-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
+		    	<img class="swiper-slide hidden-md hidden-lg" src="images/banner/Main-Banner-Cover-Up-Mobile.jpg" style="width: 100%;!important;height:auto;!important;margin-left: auto;margin-right: auto;"/>
 		    </div>
 		    <!-- If we need pagination -->
 		    <div class="swiper-pagination"></div>
@@ -504,7 +505,7 @@
 				        </div>
 				        <div data-u="slides" style="cursor:default;padding:0;top:0px;left:0px;width:570px;height:410px;overflow:hidden;">
 				            <div>
-				                <img data-u="image" src="images/banner/sub-left.jpg" />
+				                <img data-u="image" src="images/banner/sub-banner-01.jpg" />
 				            </div>
 				            <!--  <div><a href="#">
 				                <img data-u="image" src="images/01.jpg" />
@@ -540,7 +541,7 @@
 					        </div>
 					        <div data-u="slides" style="cursor:default;padding:0px 10px 10px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
-					                <img data-u="image" class="img-responsive" src="images/banner/SubRight_Top_Left.jpg" />
+					                <img data-u="image" class="img-responsive" src="images/banner/sub-banner-02.jpg" />
 					            </div>
 					            <!--  <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/02.jpg"" />
@@ -571,7 +572,7 @@
 					        </div>
 					        <div data-u="slides" style="cursor:default;padding:0px 10px 0px 10px;top:0px;left:0px;width:570px;height:400px;overflow:hidden;">
 					            <div>
-					                <img data-u="image" class="img-responsive" src="images/banner/SubRight_Top_Right.jpg" />
+					                <img data-u="image" class="img-responsive" src="images/banner/sub-banner-03.jpg" />
 					            </div>
 					            <!--  <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/03.jpg" />
@@ -602,12 +603,12 @@
 					        </div>
 					        <div data-u="slides" style="cursor:default;padding: 0px 10px 0px 10px;top:0px;left:0px;width:1140px;height:405px;overflow:hidden;">
 					            <div>
-					                <img data-u="image" class="img-responsive" src="images/4.jpg" />
+					                <img data-u="image" class="img-responsive" src="images/banner/sub-banner-04.jpg" />
 					            </div>
-					            <div><a href="#">
+					            <!--  <div><a href="#">
 					                <img data-u="image" class="img-responsive" src="images/4.jpg" />
 					            	</a>
-					            </div>
+					            </div> -->
 					        </div>
 					        <!-- Bullet Navigator -->
 					        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
